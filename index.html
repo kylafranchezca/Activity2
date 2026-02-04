@@ -4,50 +4,66 @@
     <title>Student Registration Form</title>
 </head>
 <body>
-
-    <img src="ucc_logo.jpg" alt="Logo of Unida Christian College" width="200">
-    <span>In the heart of Imus, Cavite stands a distinguished school offering a vibrant school life, 
-    merging academic excellence with character development through Christian values & holistic education, 
-    readying graduates for significant careers and lives.</span>
-    
-    
-    <tr>
-        <td colspan="2">
-            <table width="40%" cellpadding="8">
-
-                <tr>
-                    
-                    <td width="60%">
-                        Name:
-                        <input type="text"><br><br>
-
-                        Address:
-                        <input type="text"><br><br>
-
-                        Email-Ad:
-                        <input type="email"><br><br>
-
-                        Contact Number:
-                        <input type="text">
-                    </td>
-
-                  
-                    <td width="40%" valign="top">
-                        Gender:<br>
-                        <input type="radio" name="gender"> Male<br>
-                        <input type="radio" name="gender"> Female<br><br>
-
-                        Hobbies:<br>
-                        <input type="checkbox"> Swimming<br>
-                        <input type="checkbox"> Biking<br>
-                        <input type="checkbox"> Reading<br>
-                        <input type="checkbox"> Watching TV<br>
-                        <input type="checkbox"> Playing
-                    </td>
-                </tr>
-
+    <table cellpadding="10" cellspacing="0">
+        <tr>
           
-        </td>
-    </tr>
+            <td>
+                <img src="ucc_logo.jpeg" alt="Person doing push-ups" width="200">
+            </td>
+            
+            <td>
+                <p>
+                    In the heart of Imus, Cavite stands a distinguished school offering a vibrant school life, 
+                    merging academic excellence with character development through Christian values & holistic 
+                    education, readying graduates for significant careers and lives.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                
+                <form>
+                    <table cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text" name="address"></td>
+                        </tr>
+                        <tr>
+                            <td>Email-Ad:</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Contact Number:</td>
+                            <td><input type="text" name="contact"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <input type="radio" name="gender" value="Male"> Male
+                                <input type="radio" name="gender" value="Female"> Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hobbies:</td>
+                            <td>
+                                <input type="checkbox" name="hobbies" value="Swimming"> Swimming
+                                <input type="checkbox" name="hobbies" value="Biking"> Biking
+                                <input type="checkbox" name="hobbies" value="Reading"> Reading
+                                <input type="checkbox" name="hobbies" value="Watching TV"> Watching TV
+                                <input type="checkbox" name="hobbies" value="Playing"> Playing
+                            </td>
+                        </tr>
+                        <tr>
+                        
+            
+                        </tr>
+                    
+                </form>
+            </td>
+    </table>
 </body>
 </html>
