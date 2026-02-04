@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Registration Form</title>
+    <title>Fitness Registration Form</title>
 </head>
 <body>
+    
     <table cellpadding="10" cellspacing="0">
         <tr>
-          
             <td>
-                <img src="ucc_logo.jpeg" alt="Logo of Unida Chrsitian College" width="200">
+                <img src="ucc_logo.jpeg" alt="UCC Logo" width="200">
             </td>
-            
             <td>
-                <p>
-                    In the heart of Imus, Cavite stands a distinguished school offering a vibrant school life, 
-                    merging academic excellence with character development through Christian values & holistic 
-                    education, readying graduates for significant careers and lives.
-                </p>
+                In the heart of Imus, Cavite stands a distinguished school offering a vibrant school life, 
+                merging academic excellence with character development through Christian values & holistic 
+                education, readying graduates for significant careers and lives.
             </td>
         </tr>
-        <tr>
-            <td colspan="2">
+    </table>
+
+    <form>
+        <table cellpadding="8" cellspacing="0">
+            <tr>
                 
-                <form>
+                <td valign="top">
                     <table cellpadding="5" cellspacing="0">
                         <tr>
                             <td>Name:</td>
@@ -40,32 +40,38 @@
                             <td>Contact Number:</td>
                             <td><input type="text" name="contact"></td>
                         </tr>
-                        <tr>
-                            <td width="40%" valign="top">
-                        <div>       
-                        Gender:<br>
-                        <input type="radio" name="gender"> Male<br>
-                        <input type="radio" name="gender"> Female<br><br>
-                        </div> 
+                    </table>
+                </td>
 
-                        <div>
-                        Hobbies:<br>
-                        <input type="checkbox"> Swimming<br>
-                        <input type="checkbox"> Biking<br>
-                        <input type="checkbox"> Reading<br>
-                        <input type="checkbox"> Watching TV<br>
-                        <input type="checkbox"> Playing
-                        </div>
-                    </td>
+                
+                <td valign="top">
+                    <table cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <input type="radio" name="gender" value="Male"> Male
+                                <input type="radio" name="gender" value="Female"> Female
                             </td>
                         </tr>
                         <tr>
-                        
-            
+                            <td>Hobbies:</td>
+                            <td>
+                                <input type="checkbox" name="hobbies" value="Swimming"> Swimming<br>
+                                <input type="checkbox" name="hobbies" value="Biking"> Biking<br>
+                                <input type="checkbox" name="hobbies" value="Reading"> Reading<br>
+                                <input type="checkbox" name="hobbies" value="Watching TV"> Watching TV<br>
+                                <input type="checkbox" name="hobbies" value="Playing"> Playing
+                            </td>
                         </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
                     
-                </form>
-            </td>
-    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
