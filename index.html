@@ -5,12 +5,14 @@
 </head>
 <body>
 
-    <img src="ucc_logo.jpg" alt="Logo of Unida Christian College" width="200">
+    <img src="ucc_logo.jpg" alt="Logo of Unida Christian College" width="400">
     
    
-    <p>In the heart of Imus, Cavite stands a distinguished school offering a vibrant school life, merging academic excellence with character development through Christian values & holistic education, readying graduates for significant careers and lives.</p>
+    <p>In the heart of Imus, Cavite stands a distinguished school offering a vibrant school life, 
+    merging academic excellence with character development through Christian values & holistic education, 
+    readying graduates for significant careers and lives.</p>
     
-    <!-- Registration form -->
+    
     <form>
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br><br>
@@ -23,15 +25,21 @@
         
         <label for="contact">Contact Number:</label><br>
         <input type="text" id="contact" name="contact"><br><br>
-        
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br><br>
-        
 
-        <label>Hobbies:</label><br>
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <div class="inline-options">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br><br>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Hobbies:</label><br>
+            <div class="inline-options">
         <input type="checkbox" id="swimming" name="hobbies" value="Swimming">
         <label for="swimming">Swimming</label><br>
         <input type="checkbox" id="biking" name="hobbies" value="Biking">
@@ -42,7 +50,8 @@
         <label for="tv">Watching TV</label><br>
         <input type="checkbox" id="playing" name="hobbies" value="Playing">
         <label for="playing">Playing</label><br><br>
-        
+            </div>
+        </div>
     </form>
 </body>
 </html>
